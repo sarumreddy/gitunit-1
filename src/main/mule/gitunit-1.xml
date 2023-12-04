@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="d259f5e4-2b94-41d3-b235-0ba983a5157d" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<flow name="gitunit-1Flow" doc:id="3e77249f-4b1f-43dd-9ed2-5699c578b957" >
+		<http:listener doc:name="Listener" doc:id="4da3415e-0e94-4c39-8690-569de8e7d9b3" config-ref="HTTP_Listener_config" path="/path"/>
+		<logger level="INFO" doc:name="Logger" doc:id="b6af749a-6c69-4c5c-9e75-2e4e7e5b10a1" message='"logger is in git"'/>
+	</flow>
+</mule>
