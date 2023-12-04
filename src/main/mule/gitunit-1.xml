@@ -11,7 +11,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 	<flow name="gitunit-1Flow" doc:id="3e77249f-4b1f-43dd-9ed2-5699c578b957" >
 		<http:listener doc:name="Listener" doc:id="4da3415e-0e94-4c39-8690-569de8e7d9b3" config-ref="HTTP_Listener_config" path="/path"/>
 		<logger level="INFO" doc:name="Logger" doc:id="b6af749a-6c69-4c5c-9e75-2e4e7e5b10a1" message='"logger is in git"'/>
-		<logger level="INFO" doc:name="Logger" doc:id="b4512e38-70a6-4aef-8a96-6d50b432e656" message='"logger-2"'/>
+		
 		<logger level="INFO" doc:name="Logger" doc:id="2fb00dc5-8c85-45aa-a445-06e158a63d34" message='"logger-3"'/>
 		<ee:transform doc:name="Transform Message" doc:id="923e968a-e0b5-4e68-a77d-48624c66c7db" >
 			<ee:message >
